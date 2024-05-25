@@ -1,7 +1,7 @@
 ### Télécharger le projet
 
 Télécharger via GitHub\
-	OU\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OU\
 Exécuter la commande ci-dessous avec Git Bash :
 
 ```bash
