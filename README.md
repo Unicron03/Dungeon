@@ -1,9 +1,7 @@
 ### Télécharger le projet
 
 Télécharger via GitHub
-	
 	OU
-
 Exécuter la commande ci-dessous avec Git Bash :
 
 ```bash
