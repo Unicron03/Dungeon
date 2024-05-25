@@ -1,0 +1,67 @@
+﻿<Window x:Class="SAE_Dungeons.view.EndWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SAE_Dungeons.view"
+        mc:Ignorable="d"
+    Title="EndWindow" Height="850" Width="736" FontSize="30">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="..\assets\background\fondDonjon.jpg" AlignmentY="Top" AlignmentX="Center"/>
+        </Grid.Background>
+        
+        <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" Source="../assets/title/Dungeons_Pixel.PNG"/>
+        
+        <Button Name="BtnRestart" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 0, 100, 0" Content="RESTART" Width="200" Height="80" Foreground="red" FontSize="35" Click="RelaunchApplication">
+            <Button.Background>
+                <ImageBrush ImageSource="../assets/background/boutonLevel.jpg" />
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                    <Setter Property="Padding" Value="10,2,10,3"/>
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Name="BtnClose" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="100, 0, 0, 0" Content="CLOSE" Width="200" Height="80" HorizontalAlignment="center"  Foreground="red" FontSize="35" Click="CloseApplication">
+            <Button.Background>
+                <ImageBrush ImageSource="../assets/background/boutonLevel.jpg" />
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                    <Setter Property="Padding" Value="10,2,10,3"/>
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        
+        <Label Name="resultGame" Content="You ... the dungeon !" Margin="15,0,0,0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Stats : " Margin="15,0,0,0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold"/>
+
+        <Label Name="knightPV" Content="20" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="75,0,0,0" Foreground="White" FontWeight="Bold"/>
+        <Image Name="GUIpv" Source="../assets/inventory/heart.png" Grid.Row="3" Grid.Column="0" Height="45" Width="45" Margin="45,5,0,0"/>
+
+        <Label Name="orkKill" Content="3" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="90,0,0,0" Foreground="White" FontWeight="Bold"/>
+        <Image Name="GUIork" Source="../assets/monsters/ork.png" Grid.Row="3" Grid.Column="1" Height="45" Width="45" Margin="45,0,0,0"/>
+
+        <Label Name="treasure" Content="1" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Margin="90,0,0,0" Foreground="White" FontWeight="Bold"/>
+        <Image Name="GUIchest" Source="../assets/object/chest.png" Grid.Row="3" Grid.Column="2" Height="45" Width="45" Margin="45,0,0,0"/>
+    </Grid>
+</Window>

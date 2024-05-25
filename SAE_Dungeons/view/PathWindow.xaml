@@ -1,0 +1,47 @@
+﻿<Window x:Class="SAE_Dungeons.view.PathWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SAE_Dungeons.view"
+        mc:Ignorable="d"
+        Title="Path Window" Height="855" Width="736" FontSize="24">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="184"/>
+            <ColumnDefinition Width="184"/>
+            <ColumnDefinition Width="184"/>
+            <ColumnDefinition Width="184"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Content="Choose coords to go :" Margin="30,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="4"/>
+        
+        <Label Content="X : " Margin="30,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBox Name="Xcoord" Grid.Row="1" Margin="75,0,0,0" Text="0" VerticalAlignment="Center" PreviewTextInput="coord_PreviewTextInput" LostFocus="coord_LostFocus"/>
+
+        <Label Content="Y : " Margin="30,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+        <TextBox Name="Ycoord" Grid.Row="1" Grid.Column="1" Margin="75,0,0,0" Text="0" VerticalAlignment="Center" PreviewTextInput="coord_PreviewTextInput" LostFocus="coord_LostFocus"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="96,92,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+
+        <Button Content="Search" Grid.Row="1" Grid.Column="2" Width="100" Height="50" Click="DrawShortestPath"/>
+        <Button Content="Clean" Grid.Row="1" Grid.Column="3" Width="100" Height="50" Click="CleanShortestPath"/>
+
+        <Label Content="Presettings :" Margin="30,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2"/>
+        <Image HorizontalAlignment="Center" Height="75" Width="75" Grid.Row="3" VerticalAlignment="Center" Source="../assets/object/chest.png" ToolTip="Treasure"/>
+        <Image HorizontalAlignment="Center" Height="75" Width="75" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Source="../assets/object/trapdoor.png" ToolTip="Enter"/>
+        <Image HorizontalAlignment="Center" Height="75" Width="75" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Source="../assets/object/trapdoor.png" ToolTip="Exit"/>
+        <Image HorizontalAlignment="Center" Height="75" Width="75" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Source="../assets/monsters/ork.png" ToolTip="Ork"/>
+
+        <Button Content="Treasure" Grid.Row="4" Width="100" Height="50" VerticalAlignment="Top" Click="DrawShortestPath" CommandParameter="treasure"/>
+        <Button Content="Enter" Grid.Row="4" Grid.Column="1" Width="100" Height="50" VerticalAlignment="Top" Click="DrawShortestPath" CommandParameter="enter"/>
+        <Button Content="Exit" Grid.Row="4" Grid.Column="2" Width="100" Height="50" VerticalAlignment="Top" Click="DrawShortestPath" CommandParameter="exit"/>
+        <Button Content="Ork" Grid.Row="4" Grid.Column="3" Width="100" Height="50" VerticalAlignment="Top" Click="DrawShortestPath" CommandParameter="ork"/>
+    </Grid>
+</Window>

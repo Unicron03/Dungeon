@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="view\DifficulteWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\FightWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\GameWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\PathWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="view\TailleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="view\DifficulteWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\FightWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\GameWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\PathWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="view\TailleWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

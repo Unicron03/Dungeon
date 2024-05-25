@@ -1,0 +1,5 @@
+D:\IUT\SAE\SAE3_Dungeons\SAE_Dungeons\SAE_Dungeons\obj\Release\net8.0-windows7.0\view\FightWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\SAE_Dungeons\SAE_Dungeons\obj\Release\net8.0-windows7.0\view\PathWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\SAE_Dungeons\SAE_Dungeons\obj\Release\net8.0-windows7.0\App.g.cs
+D:\IUT\SAE\SAE3_Dungeons\SAE_Dungeons\SAE_Dungeons\obj\Release\net8.0-windows7.0\SAE_Dungeons_MarkupCompile.cache
+D:\IUT\SAE\SAE3_Dungeons\SAE_Dungeons\SAE_Dungeons\obj\Release\net8.0-windows7.0\SAE_Dungeons_MarkupCompile.lref

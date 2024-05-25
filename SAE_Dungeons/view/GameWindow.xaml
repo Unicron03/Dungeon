@@ -1,0 +1,41 @@
+﻿<Window x:Class="SAE_Dungeons.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SAE_Dungeons.view"
+        mc:Ignorable="d"
+        Title="Dungeons" Height="850" Width="736">
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Image Name="trapEnter" Source="../assets/object/trapdoor.png" Grid.Column="0" Grid.Row="0" Panel.ZIndex="2" Loaded="SetScale"/>
+        <Image Name="trapExit" Source="../assets/object/trapdoor.png" Panel.ZIndex="2" Loaded="SetScale"/>
+
+        <Rectangle Name="dijkstra" Fill="Red" Opacity="0.3"/>
+
+        <Image Name="knight" Grid.Column="0" Grid.Row="0" Source="../assets/knight.png" Panel.ZIndex="3" Loaded="SetScale"/>
+        <Image Name="chest" Source="../assets/object/chest.png" Panel.ZIndex="2" Loaded="SetScale"/>
+        <Image Name="ork" Source="../assets/monsters/ork.png" Panel.ZIndex="2" Visibility="Hidden" Loaded="SetScale"/>
+        <Image Name="orkD2" Source="../assets/monsters/ork.png" Panel.ZIndex="2" Visibility="Hidden" Loaded="SetScale"/>
+
+        <Image Name="chestGUI" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20" Source="../assets/object/chest.png" Loaded="SetScale"/>
+
+        <Image Name="GUIPanel" Source="../assets/inventory/panel.png" Grid.ColumnSpan="35" Height="90" Margin="0" HorizontalAlignment="Left"/>
+
+        <Image Name="GUISlot1" Source="../assets/inventory/slot.png" Grid.ColumnSpan="35" Height="70" Width="70" Margin="10, 10, 10, 10" HorizontalAlignment="Left"/>
+        <Image Name="GUISlot2" Source="../assets/inventory/slot.png" Grid.ColumnSpan="35" Height="70" Width="70" Margin="90, 10, 10, 10" HorizontalAlignment="Left"/>
+        <Image Name="GUISlot3" Source="../assets/inventory/slot.png" Grid.ColumnSpan="35" Height="70" Width="70" Margin="170, 10, 10, 10" HorizontalAlignment="Left"/>
+
+        <Image Name="contentGUITreasure" Source="../assets/object/chest.png" Grid.ColumnSpan="35" Height="45" Width="45" Margin="22, 10, 10, 10" Visibility="Hidden" HorizontalAlignment="Left"/>
+        <Image Name="contentGUIPickaxe" Source="../assets/object/pickaxe.png" Grid.ColumnSpan="35" Height="45" Width="45" Margin="102, 10, 10, 10" HorizontalAlignment="Left"/>
+        <Image Name="contentGUIPotion" Source="../assets/object/potion.png" Grid.ColumnSpan="35" Height="45" Width="45" Margin="194, 10, 10, 10" HorizontalAlignment="Left"/>
+
+        <Label Name="knightPV" FontSize="30" Content="20" Grid.ColumnSpan="35" Margin="270, 10, 10, 10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Image Name="GUIpv" Source="../assets/inventory/heart.png" Grid.ColumnSpan="35" Margin="320, 10, 10, 10" HorizontalAlignment="Left" Width="45" Height="45"/>
+
+        <Button Name="GUIButtonPath" Content="Choose Path" Click="OpenPathWindow" Grid.ColumnSpan="35" Margin="400, 10, 10, 10" HorizontalAlignment="Left" Height="35" Width="100"/>
+    </Grid>
+</Window>

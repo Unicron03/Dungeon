@@ -1,0 +1,108 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+	<ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>assets\knight.ico</ApplicationIcon>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="assets\background\background\**" />
+    <EmbeddedResource Remove="assets\background\background\**" />
+    <None Remove="assets\background\background\**" />
+    <Page Remove="assets\background\background\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="assets\background\boutonLevel.jpg" />
+    <None Remove="assets\chest.png" />
+    <None Remove="assets\Dungeons_Pixel.PNG" />
+    <None Remove="assets\fondDonjon.jpg" />
+    <None Remove="assets\inventory\heart.png" />
+    <None Remove="assets\inventory\panel.png" />
+    <None Remove="assets\inventory\slot.png" />
+    <None Remove="assets\inventory\transparent.png" />
+    <None Remove="assets\knight.png" />
+    <None Remove="assets\LevelPixel.png" />
+    <None Remove="assets\monsters\ork.png" />
+    <None Remove="assets\object\potion.png" />
+    <None Remove="assets\pickaxe.png" />
+    <None Remove="assets\sounds\bottle.wav" />
+    <None Remove="assets\sounds\gameover.wav" />
+    <None Remove="assets\sounds\marche.wav" />
+    <None Remove="assets\sounds\pickaxe.wav" />
+    <None Remove="assets\sounds\treasure.wav" />
+    <None Remove="assets\sounds\win.wav" />
+    <None Remove="assets\TaillePixel.png" />
+    <None Remove="assets\tile_grass.png" />
+    <None Remove="assets\tile_ground.png" />
+    <None Remove="assets\trapdoor.png" />
+    <None Remove="assets\treasure.mp3" />
+    <None Remove="assets\treasure.wav" />
+    <None Remove="assets\wall.png" />
+    <None Remove="assets\wallVert.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\knight.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\sounds\gameover.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\background\boutonLevel.jpg" />
+    <Resource Include="assets\background\fondDonjon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\object\chest.png" />
+    <Resource Include="assets\sounds\win.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\title\Dungeons_Pixel.PNG" />
+    <Resource Include="assets\inventory\heart.png" />
+    <Resource Include="assets\inventory\panel.png" />
+    <Resource Include="assets\inventory\slot.png" />
+    <Resource Include="assets\inventory\transparent.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\knight.png" />
+    <Resource Include="assets\title\LevelPixel.png" />
+    <Resource Include="assets\monsters\ork.png" />
+    <Resource Include="assets\object\potion.png" />
+    <Resource Include="assets\object\pickaxe.png" />
+    <Resource Include="assets\sounds\bottle.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\sounds\marche.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\sounds\pickaxe.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\sounds\treasure.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\title\TaillePixel.png" />
+    <Resource Include="assets\background\tile_ground.png" />
+    <Resource Include="assets\object\trapdoor.png" />
+    <Resource Include="assets\background\wall.png" />
+    <Resource Include="assets\background\wallVert.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="assets\knight.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

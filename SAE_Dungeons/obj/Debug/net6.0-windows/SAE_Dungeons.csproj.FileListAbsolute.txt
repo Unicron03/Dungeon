@@ -1,0 +1,12 @@
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\SAE_Dungeons.csproj.AssemblyReference.cache
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\view\DifficulteWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\view\EndWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\view\FightWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\view\GameWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\view\PathWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\view\StartWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\view\TailleWindow.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\App.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\SAE_Dungeons_Content.g.cs
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\SAE_Dungeons_MarkupCompile.cache
+D:\IUT\SAE\SAE3_Dungeons\final\SAE_Dungeons\SAE_Dungeons\obj\Debug\net6.0-windows\SAE_Dungeons_MarkupCompile.lref
